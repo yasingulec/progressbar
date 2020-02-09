@@ -1,0 +1,33 @@
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<h1>Responsive Checkout Progress Bar</h1>
+  <! -- To test add 'active' class and 'visited' class to different li elements -->
+  
+<div class="checkout-wrap">
+  <ul class="checkout-bar">
+
+    <li class="visited first" id="vis" value="tarih1">
+      <a href="#">Login</a>
+    </li>
+    
+    <li class="previous visited" value="31">Shipping & Billing</li>
+    
+    <li class="active" value="tarih">Shipping Options</li>
+    
+    <li class="next" value="falan">Review & Payment</li>
+    
+    <li class="" value="ok" id="son">Complete</li>
+       
+  </ul>
+</div>
+
+
+<script>
+    const step1= document.getElementById('vis');
+    const step1value=step1.value;
+    if (!step1value){
+     var step5=document.getElementById('son');
+     step5.classList.add("visited");
+ 
+    }
+</script>
